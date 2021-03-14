@@ -1,30 +1,48 @@
-const inquirer = require('inquirer');
-const employee = require('../lib/Employee');
+const Employee = require('../lib/Employee');
 
-describe ('employee', () => {
-    describe ('employeeInfo', () => {
-        it('should prompt the user to enter employee name, employee ID, and email', () => {
-            
-        })
+test('can instantiate employee instance', () => {
+    const x = new Employee(name);
+    expect(typeof(x)).toBe('object');
+});
 
-        it('should update HTML file with employee name, employee ID, and email', () => {
+test('can set name via constructor argument', () => {
+    const name = 'Giovany'
+    const x = new Employee(name);
+    expect(x.name).toBe(name);
+});
 
-        })
-    });
+test('can set id via constructor argument', () => {
+    const id = 123
+    const x = new Employee('Foo', id);
+    expect(x.id).toBe(id);
+});
 
-    describe ('addEmployee', () => {
-        it('should prompt if the user wants to create a new engineer or intern', () => {
+test('can set email via constructor argument', () => {
+    const email = 'test@gmail.com'
+    const x = new Employee('Foo', 1, email);
+    expect(x.email).toBe(email);
+});
 
-        })
-        
-        it('should run employeeInfo() and engineer/intern code if creating new employee, else run endApp()', () => {
+test('can get name via getName()', () => {
+    const testValue = 'Keith'
+    const x = new Employee(testValue);
+    expect(x.getName()).toBe(testValue);
+});
 
-        })
-    });
+test('can get id via getId()', () => {
+    const testValue = 1
+    const x = new Employee('Keith', testValue);
+    expect(x.getId()).toBe(testValue);
+});
 
-    describe ('endApp', () => {
-        it('should end the application and notify user of new HTML file created', () => {
+test('can get email via getEmail()', () => {
+    const testValue = 'test@gmail.com'
+    const x = new Employee('Keith', 1, testValue);
+    expect(x.getEmail()).toBe(testValue);
+});
 
-        })
-    });
+test('can get role should return "Employee" via getRole()', () => {
+    const testValue = "Employee"
+    const x = new Employee('Keith', 1, 'test@gmail.com');
+    expect(x.getRole()).toBe(testValue);
 });

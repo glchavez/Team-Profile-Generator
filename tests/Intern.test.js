@@ -1,14 +1,12 @@
-const inquirer = require('inquirer');
-const intern = require('../lib/Intern');
+const Intern = require('../lib/Intern');
 
-describe ('intern', () => {
-    describe ('askSchoolName', () => {
-        it('should prompt the user to enter intern school', () => {
-            
-        })
+test('can instantiate intern instance', () => {
+    const x = new Intern(name);
+    expect(typeof(x)).toBe('object');
+});
 
-        it('should update HTML file with intern school', () => {
-
-        })
-    });
+test('can get role should return "Intern" via getRole()', () => {
+    const testValue = "Intern"
+    const x = new Intern('Keith', 1, 'test@gmail.com');
+    expect(x.getRole()).toBe(testValue);
 });

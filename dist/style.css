@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    padding: 35px;
+    margin-top: -5px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgb(247, 77, 77);
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.card-header {
+    color: white;
+    background-color: rgb(50, 101, 252);
+}

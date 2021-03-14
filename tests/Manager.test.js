@@ -1,17 +1,12 @@
-const inquirer = require('inquirer');
-const manager = require('../lib/Manager');
+const Manager = require('../lib/Manager');
 
-describe ('manager', () => {
-    describe ('askOfficeNum', () => {
-        it('should prompt the user to enter manager office number', () => {
-            
-        })
-
-        it('should update HTML file with manager office number', () => {
-
-        })
-    });
+test('can instantiate manager instance', () => {
+    const x = new Manager(name);
+    expect(typeof(x)).toBe('object');
 });
 
-
-// need code in here to take functions from employee and then transition to intern/manager?
+test('can get role should return "Manager" via getRole()', () => {
+    const testValue = "Manager"
+    const x = new Manager('Keith', 1, 'test@gmail.com');
+    expect(x.getRole()).toBe(testValue);
+});

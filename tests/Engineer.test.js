@@ -1,14 +1,12 @@
-const inquirer = require('inquirer');
-const engineer = require('../lib/Engineer');
+const Engineer = require('../lib/Engineer');
 
-describe ('engineer', () => {
-    describe ('askGitHubName', () => {
-        it('should prompt the user to enter engineer GitHub username', () => {
-            
-        })
+test('can instantiate engineer instance', () => {
+    const x = new Engineer(name);
+    expect(typeof(x)).toBe('object');
+});
 
-        it('should update HTML file with GitHub username', () => {
-
-        })
-    });
+test('can get role should return "Engineer" via getRole()', () => {
+    const testValue = "Engineer"
+    const x = new Engineer('Keith', 1, 'test@gmail.com', 'glchavez');
+    expect(x.getRole()).toBe(testValue);
 });
