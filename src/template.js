@@ -2,7 +2,7 @@ const generateCards = allEmployees => {
 
 const generateManager = manager => {
     return `
-    <div class="col-4>
+    <div class="col-4">
         <div class="card employee-card">
             <div class="card-header">
                 <h2 class="card-title">${manager.getName()}</h2>
@@ -22,7 +22,7 @@ const generateManager = manager => {
 
 const generateEngineer = engineer => {
     return `
-    <div class="col-4>
+    <div class="col-4">
         <div class="card employee-card">
             <div class="card-header">
                 <h2 class="card-title">${engineer.getName()}</h2>
@@ -42,7 +42,7 @@ const generateEngineer = engineer => {
 
 const generateIntern = intern => {
     return `
-    <div class="col-4>
+    <div class="col-4">
         <div class="card employee-card">
             <div class="card-header">
                 <h2 class="card-title">${intern.getName()}</h2>
