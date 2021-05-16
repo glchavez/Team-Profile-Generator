@@ -1,8 +1,10 @@
 # Team-Profile-Generator
 
-## Description
+This application is intended to help individuals quikly make a profile webpage for their company that is professional and simple in design.
 
-This repository takes in user input from pre-defined questions and creates a simple team profile html document. It is intended to help individuals quikly make a profile webpage for their company that is professional and simple in design. They will be able to display contact information in a centralized location.
+## Overview
+
+This repository takes in user input from pre-defined questions and creates a simple team profile html document. They will be able to display contact information in a centralized location.
 
 A challenge I faced when creating this repository was working with classes and sub-classes in JavaScript. Best designing the code to interact between classes and files took many attempts and hours of research. For future improvements, I would like to provide more position options, as currently there are only three options.
 
